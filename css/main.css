@@ -54,23 +54,26 @@ h2{
         color: #00B0A3;
 }
 
-h1{
-        
-        font-size: 2.4rem;
-        
+h1{    
+        font-size: 3.8rem;     
 }
 
 h2{
-      font-size: 1.8rem;  
+      font-size: 2rem;  
 }
 
 h3{
         color:#00B0A3;
         font-size: 1.3rem;
+        margin: 0 auto;
 }
 
 h4{
         margin: 0 auto;
+}
+
+i{
+        font-size: 1.8rem;
 }
 
 
@@ -300,7 +303,12 @@ li {
         -webkit-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;   
-        padding:6rem;    
+        padding:6rem 0;    
+}
+
+#hero p{
+        font-size: 1.3rem;
+        line-height: 1.5em;
 }
 
 #hero>div{
@@ -313,36 +321,12 @@ header .row{
         align-items: center;
 }
 
-@media screen and (min-width: 768px){
-
-        /* -----HERO------ */
-
-        #hero{
-                background: url(../img/balloon-hero.jpg) no-repeat;
-                -moz-background-size: contain;
-                -o-background-size: contain;
-                -webkit-background-size: contain;
-                -ms-background-size: contain;
-                background-size: contain;   
-                padding:6rem;  
-        }
-
-       header>div:last-of-type{
-               background-color: #FFD8DB;
-       }
-
-       /* -----LAYOUT------ */
-
-       #layout{
-               flex-direction: row-reverse;
-        }
 
 /* -----SYSTEMS------ */
-        #systems>div:first-of-type{
-                text-align: center;
-        }
-}
 
+#systems i{
+       font-size: 1.5rem;
+}
 
 
 /* -----LAYOUT------ */
@@ -356,7 +340,7 @@ header .row{
 
 /* -----BENEFITS------ */
 
-#benefits>div:first-of-type{
+#benefits{
         text-align: center;
 }
 
@@ -377,6 +361,7 @@ footer li{
 
 footer{
         border-top: #FFD8DB solid 3px;
+        text-align: center;
 }
 
 footer .row>div:first-of-type{
@@ -384,14 +369,109 @@ footer .row>div:first-of-type{
 }
 
 footer .row{
-        justify-content: left;
+        justify-content: center;
         align-items: center;
+        flex-direction: column-reverse;
+
 }
 
 footer p{
         margin: 0 auto;
-        text-decoration: underline;
 }
+
+@media screen and (min-width: 768px){
+
+        /* -----UNIVERSAL------ */
+
+        html{ 
+                font: .9rem/1.6em 'Roboto Slab', serif;
+        }
+
+
+
+        #systems>div:first-of-type,
+        #benefits>div:first-of-type{
+                margin: 0 auto;
+                padding: 2em 0;
+        }
+
+        /* -----HERO------ */
+
+        #hero{
+                background: url(../img/balloon-hero.jpg) no-repeat;
+                -moz-background-size: contain;
+                -o-background-size: contain;
+                -webkit-background-size: contain;
+                -ms-background-size: contain;
+                background-size: contain;   
+                padding:6em;  
+        }
+
+        header nav{
+                text-align: right;
+        }
+
+       header>div:last-of-type{
+               background-color: #FFD8DB;
+       }
+
+       /* -----LAYOUT------ */
+
+       #layout{
+               flex-direction: row-reverse;
+        }
+
+        /* -----SYSTEMS------ */
+        #systems{
+                text-align: center;
+        }
+
+        /* -----TESTING------ */
+        #testing>div:first-of-type{
+                background: url(../img/rainbow-balloons.jpg) no-repeat ;
+                -moz-background-size: contain;
+                -o-background-size: contain;
+                -webkit-background-size: contain;
+                -ms-background-size: contain;
+                background-size: contain;   
+        }
+
+        /* -----BENEFITS------ */
+
+        #benefits .row{
+                text-align: left;
+                justify-content: flex-start;
+        }
+
+
+        /* -----FOOTER------ */
+
+        footer .row{
+                justify-content: left;
+                align-items: center;
+                flex-direction: row;
+        }
+}
+
+
+@media screen and (min-width: 1024px){
+
+        /* -----HERO------ */
+        h1{
+                font-size: 5rem;
+                font-weight: 100;
+        }
+        
+        #hero p{
+                font-size: 1.2rem;
+                line-height: 1.7em;
+                margin: 0 13em;
+        }
+
+
+}
+
+
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */

@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
+<script src="https://kit.fontawesome.com/e7873d0934.js" crossorigin="anonymous"></script>
 <title>Atomic Design</title>
 </head>
 
@@ -33,7 +34,7 @@
 
         <div>
             <div id="hero" class="wrapper img-responsive col-sm-12">
-                <div> <!-- Text align center -->
+                <div class="wrapper"> <!-- Text align center -->
                     <h1>atomic design</h1>
                     <p>We're not designing pages, we're designing systems of components. </p>
                 </div>
@@ -43,7 +44,7 @@
 
     <main class="wrapper">
         <section id="systems"> <!-- Text align center -->
-            <div class="col-center col-sm-12">
+            <div class="col-center col-sm-12 col-md-8">
                 <header>
                     <h2>design systems</h2>
                 </header>
@@ -52,25 +53,34 @@
 
             <div class="row">
             
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <header>
-                        <h3>atoms</h3>
-                    </header>
-                    <p><b>Atoms are the basic building blocks of matter.</b> Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button. Atoms can also include color palettes, fonts and animations. They're fairly abstract and often not terribly useful on their own. However, they're good as a reference in the context of a pattern library as you can see all your global styles laid out at a glance.</p>
+                <div class="row col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-1 col-md-12"><i class="fa-solid fa-atom"></i></div>
+                    <div class="col-sm-11 col-md-12">
+                        <header>
+                            <h3>atoms</h3>
+                        </header>
+                        <p><b>Atoms are the basic building blocks of matter.</b> Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button. Atoms can also include color palettes, fonts and animations. They're fairly abstract and often not terribly useful on their own. However, they're good as a reference in the context of a pattern library as you can see all your global styles laid out at a glance.</p>
+                    </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4"> 
-                    <header>
-                        <h3>molecules</h3>
-                    </header>
-                    <p>Things start getting more interesting and tangible when we start combining atoms together. <b>Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound.</b> These molecules take on their own properties and serve as the backbone of our design systems.</p>
+                <div class="row col-sm-12 col-md-6 col-lg-4"> 
+                    <div class="col-sm-1 col-md-12"><i class="fa-solid fa-dna"></i></div>
+                    <div class="col-sm-11 col-md-12">
+                        <header>
+                            <h3>molecules</h3>
+                        </header>
+                        <p>Things start getting more interesting and tangible when we start combining atoms together. <b>Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound.</b> These molecules take on their own properties and serve as the backbone of our design systems.</p>
+                    </div>
                 </div>
 
-                <div class="col-sm-12 col-md-12 col-lg-4">
-                    <header>
-                        <h3>organisms</h3>
-                    </header>
-                    <p>Molecules give us some building blocks to work with, and we can now combine them together to form organisms. <b>Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface.</b> Organisms can consist of similar and/or different molecule types. Building up from molecules to organisms encourages creating standalone, portable, reusable components.</p>
+                <div class="row col-sm-12 col-md-12 col-lg-4">
+                    <div class="col-sm-1 col-md-12"><i class="fa-solid fa-bacteria"></i></div>
+                    <div class="col-sm-11 col-md-12">
+                        <header>
+                            <h3>organisms</h3>
+                        </header>
+                        <p>Molecules give us some building blocks to work with, and we can now combine them together to form organisms. <b>Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface.</b> Organisms can consist of similar and/or different molecule types. Building up from molecules to organisms encourages creating standalone, portable, reusable components.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -109,10 +119,8 @@
             
             </div>
 
-        <section id="testing">
-            <div class="row col-sm-12 col-lg-5">
-                <img src="" alt="">
-            </div>
+        <section id="testing" class="row">
+            <div class="col-sm-12 col-lg-5"></div>
 
             <div class="col-sm-12 col-lg-7">
                 <header>
@@ -125,40 +133,55 @@
         </section>
 
         <section id="benefits">
-            <div class="col-sm-12 col-lg-12 col-center">
+            <div class="col-sm-12 col-md-8 col-center">
                 <header>
                     <h2>benefits</h2>
                 </header>
                 <p>Atomic design can require considerably more thought and planning, but it's often worth the extra effort. So what are the main benefits of it?</p>
             </div>
 
-            <div>
-                <header>
-                    <h3>design</h3>
-                </header>
-                <p><b>Building a component-based system</b> &mdash; When we are breaking down our components into basic atoms, it becomes easier to see what atoms can be combined or mixed and matched to form other molecules or organisms. It helps us to navigate between atomic parts and the whole of our UIs.</p>
-                <p><b>Style guide creation becomes simple</b> &mdash; Applying the atomic design principles from the get-go, which means that all the atoms and molecules are created before the site is built, you can incorporate all your atoms and molecules into your style guide. This keeps your design consistent across platforms.</p>
-            </div>
+            <div class="row">
+                <section class="row col-md-6">
+                    <div class="col-sm-12 col-md-1">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
 
-            <div>
-                <header>
-                    <h3>development</h3>
-                </header>
-                <p><b>Easy-to-read code that is more consistent</b> &mdash; The code of 'atomically' designed websites is typically much easier to read than one created a more traditional way. Consistency is given when you use predefined atoms in order to create the site layout. It makes it easy to see which components are being used for different parts of the site. This reduces the tendency of duplicate code on the site.</p>
-                <p><b>Faster Prototyping and updating</b> &mdash; By having a defined list of atoms before the creation process begins eventually means that you can mock-up pages quickly and easily. You simply pick and combine the required elements for the site. If an update is necessary, only one atom, molecule or organism is changed at a time. This simplifies any updates to a component that is carried out across to all other instances.</p>
+                    <div class="col-sm-12 col-md-11">
+                        <header>
+                            <h3>design</h3>
+                        </header>
+                        <p><b>Building a component-based system</b> &mdash; When we are breaking down our components into basic atoms, it becomes easier to see what atoms can be combined or mixed and matched to form other molecules or organisms. It helps us to navigate between atomic parts and the whole of our UIs.</p>
+                        <p><b>Style guide creation becomes simple</b> &mdash; Applying the atomic design principles from the get-go, which means that all the atoms and molecules are created before the site is built, you can incorporate all your atoms and molecules into your style guide. This keeps your design consistent across platforms.</p>
+                    </div>
+                </section>
+
+                <section class="row col-md-6">
+
+                    <div class="col-sm-12 col-md-1">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div class="col-sm-12 col-md-11">
+                        <header>
+                            <h3>development</h3>
+                        </header>
+                        <p><b>Easy-to-read code that is more consistent</b> &mdash; The code of 'atomically' designed websites is typically much easier to read than one created a more traditional way. Consistency is given when you use predefined atoms in order to create the site layout. It makes it easy to see which components are being used for different parts of the site. This reduces the tendency of duplicate code on the site.</p>
+                        <p><b>Faster Prototyping and updating</b> &mdash; By having a defined list of atoms before the creation process begins eventually means that you can mock-up pages quickly and easily. You simply pick and combine the required elements for the site. If an update is necessary, only one atom, molecule or organism is changed at a time. This simplifies any updates to a component that is carried out across to all other instances.</p>
+                    </div>
+                </section>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="wrapper row">
-            <div class="col-sm-4">
+            <div class="col-sm-6 col-md-2">
                 <img src="img/ding_logo.jpg" alt="" class="img-responsive" data-rjs="2">
                 <h4>Atomic Design</h4>
-                <p>By Brand Frost</p>
+                <p>By Brad Frost</p>
             </div>
 
-            <div class="col-sm-8">
+            <div class="col-sm-12 col-md-2">
                 <nav>
                     <ul>
                         <li><a href="#systems">Systems</a></li>
@@ -168,7 +191,6 @@
                     </ul>
                 </nav>
             </div>
-
         </div>
     </footer>
 
