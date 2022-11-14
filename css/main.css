@@ -52,6 +52,7 @@ h1,
 h2{
         font-family: 'Pacifico', sans-serif;
         color: #00B0A3;
+        font-weight: 100;
 }
 
 h1{    
@@ -124,6 +125,12 @@ li {
 [class*='col-']{
         padding: 10px 5px;
 }
+
+[class*='col-'] [class*='col-']{
+        margin-left: -10px;
+        margin-right: -10px;
+}
+
 
 .col-sm-1 {
         width: calc(100% * 1/ 12);
@@ -344,6 +351,9 @@ header .row{
         text-align: center;
 }
 
+#benefits i{
+        margin-right: 1em;
+}
 
 /* -----FOOTER------ */
 
@@ -406,6 +416,13 @@ footer p{
                 background-size: contain;   
                 padding:6em;  
         }
+        
+        /* header>div:first-of-type{
+                position: fixed;
+                border-bottom: #FFD8DB 2px solid;
+                top:2%;
+                left:80%;
+        } */
 
         header nav{
                 text-align: right;
@@ -440,7 +457,6 @@ footer p{
 
         #benefits .row{
                 text-align: left;
-                justify-content: flex-start;
         }
 
 
@@ -465,8 +481,16 @@ footer p{
         #hero p{
                 font-size: 1.2rem;
                 line-height: 1.7em;
-                margin: 0 13em;
+                margin: 0 9em;
         }
+
+        header>div:first-of-type{
+                border-bottom: #FFD8DB solid 3px;
+                /* position:fixed;
+                top: 100%;
+                left: 100%; */
+        }
+
 
 
 }
