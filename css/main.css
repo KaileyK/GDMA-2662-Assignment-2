@@ -485,10 +485,12 @@ footer p{
         }
 
         header>div:first-of-type{
+                background-color: #ffffff;
                 border-bottom: #FFD8DB solid 3px;
-                /* position:fixed;
-                top: 100%;
-                left: 100%; */
+                position: fixed;
+                top: 0%;
+                left: 0%;
+                width: 100%;
         }
 
 
