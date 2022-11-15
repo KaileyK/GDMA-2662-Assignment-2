@@ -66,15 +66,10 @@ h2{
 h3{
         color:#00B0A3;
         font-size: 1.3rem;
-        margin: 0 auto;
-}
-
-h4{
-        margin: 0 auto;
 }
 
 i{
-        font-size: 1.8rem;
+        font-size: 2.5rem;
 }
 
 
@@ -303,24 +298,32 @@ li {
 
 /* -----HERO------ */
 
-#hero{
+#hero>div{
         background: url(../img/balloon-hero.jpg) center no-repeat;
         -moz-background-size: cover;
         -o-background-size: cover;
         -webkit-background-size: cover;
         -ms-background-size: cover;
         background-size: cover;   
-        padding:6rem 0;    
+        padding:6rem 0; 
+        text-align: center; 
 }
 
-#hero p{
+header>div:first-of-type{
+        background-color: #ffffff;
+        border-bottom: #FFD8DB solid 3px;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+}
+
+#hero div:last-of-type{
         font-size: 1.3rem;
         line-height: 1.5em;
+        margin-top: 4em;
 }
 
-#hero>div{
-        text-align: center;
-}
 
 header .row{
         justify-content: center;
@@ -328,21 +331,26 @@ header .row{
         align-items: center;
 }
 
+#hero{
+        text-align: center;
+        background-color: #FFD8DB; ;
+}
+
 
 /* -----SYSTEMS------ */
 
 #systems i{
-       font-size: 1.5rem;
+       font-size: 2rem;
 }
 
 
 /* -----LAYOUT------ */
 
-#layout>section:first-of-type{
+#layout>section:first-child{
         background-color: #FFD8DB;
         text-align: center;
         padding: 2em;
-        vertical-align: center;
+        flex-direction: column;
 }
 
 /* -----BENEFITS------ */
@@ -374,16 +382,12 @@ footer{
         text-align: center;
 }
 
-footer .row>div:first-of-type{
-        text-align: center;
-}
-
 footer .row{
         justify-content: center;
         align-items: center;
-        flex-direction: column-reverse;
-
 }
+
+
 
 footer p{
         margin: 0 auto;
@@ -407,7 +411,7 @@ footer p{
 
         /* -----HERO------ */
 
-        #hero{
+        #hero>div{
                 background: url(../img/balloon-hero.jpg) no-repeat;
                 -moz-background-size: contain;
                 -o-background-size: contain;
@@ -417,20 +421,17 @@ footer p{
                 padding:6em;  
         }
         
-        /* header>div:first-of-type{
-                position: fixed;
-                border-bottom: #FFD8DB 2px solid;
-                top:2%;
-                left:80%;
-        } */
+        #hero{
+                background-color: #FFD8DB;  
+        }
 
         header nav{
                 text-align: right;
         }
 
-       header>div:last-of-type{
+       /* header>div:last-of-type{
                background-color: #FFD8DB;
-       }
+       } */
 
        /* -----LAYOUT------ */
 
@@ -467,6 +468,11 @@ footer p{
                 align-items: center;
                 flex-direction: row;
         }
+
+        footer .row{
+                flex-direction: row-reverse;
+        
+        }
 }
 
 
@@ -478,22 +484,10 @@ footer p{
                 font-weight: 100;
         }
         
-        #hero p{
+        #hero div:last-of-type{
                 font-size: 1.2rem;
                 line-height: 1.7em;
-                margin: 0 9em;
         }
-
-        header>div:first-of-type{
-                background-color: #ffffff;
-                border-bottom: #FFD8DB solid 3px;
-                position: fixed;
-                top: 0%;
-                left: 0%;
-                width: 100%;
-        }
-
-
 
 }
 
